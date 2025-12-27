@@ -7,4 +7,4 @@
 - Bumble Bee (Yellow) 🟡
 - Jazz (Gray) 🔘
 - Mirage (Red) 🔴
-- White (Sideswipe) ⚪️
+- Sideswipe (White) ⚪️
