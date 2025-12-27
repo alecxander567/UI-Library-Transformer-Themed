@@ -1,6 +1,6 @@
 # Building my own library from scratch
 ## Day 1 Implemented Button styles
-- implemented with class names of transformers characters inspired by it.
+- implemented with variants of transformers characters inspired by it.
 - Prime (Blue) 🔵
 - Ironhide (Black) ⚫
 - Ratchet (Green) 🟢
