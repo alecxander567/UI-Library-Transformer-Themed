@@ -11,6 +11,35 @@
   transition: all 0.2s ease;
 }
 
+.fullWidth {
+  width: 100%;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.scout {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.warrior {
+  padding: 10px 18px;
+  font-size: 14px;
+}
+
+.leader {
+  padding: 14px 24px;
+  font-size: 16px;
+}
+
 .prime {
   background: #2563eb;
   color: white;
@@ -46,34 +75,4 @@
 .ratchet {
   background: var(--btn-bg);
   color: white;
-}
-
-.button:hover:not(:disabled) {
-  transform: translateY(-1px);
-  opacity: 0.95;
-}
-
-.button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.scout {
-  padding: 6px 12px;
-  font-size: 12px;
-}
-
-.warrior {
-  padding: 10px 18px;
-  font-size: 14px;
-}
-
-.leader {
-  padding: 14px 24px;
-  font-size: 16px;
-}
-
-.button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
