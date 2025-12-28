@@ -8,3 +8,6 @@
 - Jazz (Gray) 🔘
 - Mirage (Red) 🔴
 - Sideswipe (White) ⚪️
+
+## Day 2 Implemented forms
+- with light and dark mode ⚪️⚫
