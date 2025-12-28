@@ -11,4 +11,5 @@
 
 ## Day 2 Implemented inputs and forms
 - form with light and dark mode ⚪️⚫
+- adjustable form sizes
 - inputs adaptable to theme adjustable sizes
