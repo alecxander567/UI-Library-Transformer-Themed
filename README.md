@@ -9,5 +9,6 @@
 - Mirage (Red) 🔴
 - Sideswipe (White) ⚪️
 
-## Day 2 Implemented forms
+## Day 2 Implemented forms and forms
 - with light and dark mode ⚪️⚫
+- inputs adaptable to theme adjustable sizes
