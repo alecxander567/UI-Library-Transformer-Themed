@@ -1,4 +1,7 @@
 import { Button } from "./components";
+import { Input } from "./components";
+import { Form } from "./components";
+import { FormContainer } from "./components";
 
 function App() {
   return (
@@ -7,21 +10,55 @@ function App() {
         display: "grid",
         gap: "12px",
         gridAutoFlow: "row",
-        justifyItems: "start", 
+        justifyItems: "start",
+        paddingLeft: "50px",
       }}>
-      <Button label="Prime" />
-      <Button label="Ironhide" variant="ironhide" />
-      <Button label="Sideswipe" variant="sideswipe" />
-      <Button label="Mirage" variant="mirage" />
-      <Button label="Bee" variant="bee" />
-      <Button label="Jazz" variant="jazz" />
-      <Button label="Ratchet" variant="ratchet" />
-      <Button label="Scout Prime" size="scout" />
-      <Button label="Warrior Bee" variant="bee" />
-      <Button label="Leader Ironhide" variant="ironhide" size="leader" />
-      <Button label="Full Width Jazz" variant="jazz" fullWidth />
-      <Button label="Full Width Prime" variant="prime" fullWidth />
-      <Button label="Loading..." loading />
+      <Button variant="ironhide">Ironhide</Button>
+      <Button variant="sideswipe">Sideswipe</Button>
+      <Button variant="mirage">Mirage</Button>
+      <Button variant="bee">Bee</Button>
+      <Button variant="jazz">Jazz</Button>
+      <Button variant="ratchet">Ratchet</Button>
+      <Button size="scout">Scout Prime</Button>
+      <Button variant="bee">Warrior Bee</Button>
+      <Button variant="ironhide" size="leader">
+        Leader Ironhide
+      </Button>
+      <Button variant="jazz" fullWidth>
+        Full Width Jazz
+      </Button>
+      <Button variant="prime" fullWidth>
+        Full Width Prime
+      </Button>
+      <Button variant="mirage" size="leader">
+        Leader Mirage
+      </Button>
+      <Button variant="mirage" size="leader" fullWidth loading>
+        Loading Mirage
+      </Button>
+      <Button loading>Loading...</Button>
+      <FormContainer variant="card" theme="dark" height="500px">
+        <Form spacing="lg" style={{ width: 320 }}>
+          <Input label="Email" placeholder="Enter email" fullWidth />
+          <Input
+            label="Password"
+            placeholder="Enter Password"
+            type="password"
+            fullWidth
+            style={{
+              background: "white",
+              border: "2px solid black",
+              color: "black",
+            }}
+          />
+          <Button variant="mirage" fullWidth>
+            Login
+          </Button>
+          <Button variant="jazz" fullWidth>
+            Cancel
+          </Button>
+        </Form>
+      </FormContainer>
     </div>
   );
 }

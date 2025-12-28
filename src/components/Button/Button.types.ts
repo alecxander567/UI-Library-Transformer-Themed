@@ -9,12 +9,10 @@ export type ButtonVariant =
 
 export type ButtonSize = "scout" | "warrior" | "leader";
 
-export interface ButtonProps {
-  label: string;
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   fullWidth?: boolean;
-  disabled?: boolean;
   loading?: boolean;
-  onClick?: () => void;
 }

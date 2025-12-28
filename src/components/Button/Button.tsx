@@ -3,15 +3,15 @@ import type { ButtonProps } from "./Button.types";
 import { colors, fontSizes, spacing, shadows } from "../../styles/tokens";
 
 export const Button = ({
-  label,
+  children,
   variant = "prime",
   size = "warrior",
   fullWidth = false,
   disabled = false,
   loading = false,
-  onClick,
+  ...props
 }: ButtonProps) => {
-  const styleVars: React.CSSProperties = {
+  const styleVars = {
     "--btn-bg": colors[variant],
     "--btn-color": variant === "sideswipe" ? "#020617" : "white",
     "--btn-padding": spacing[size],
@@ -25,12 +25,12 @@ export const Button = ({
         styles.button,
         styles[variant],
         styles[size],
-        fullWidth ? styles.fullWidth : "",
+        fullWidth && styles.fullWidth,
       ].join(" ")}
       style={styleVars}
       disabled={disabled || loading}
-      onClick={onClick}>
-      {loading ? "Loading..." : label}
+      {...props}>
+      {loading ? "Loading..." : children}
     </button>
   );
 };
